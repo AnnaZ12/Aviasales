@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #E5E5E5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600px;
+  color: #2196F3;
+}
+
+h2 {
+  font-size: 12px;
+  color: #A0B0B9;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #4a4a4a;
+  font-size: 13px;
+  width: 232px;
+  height: fit-content;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 20px;
+  background: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.sidebar h3 {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.sidebar form {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.sidebar label {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  padding: 10px 28px 10px 50px;
+}
+
+.sidebar label:hover {
+  background: #f1f1f1
+}
+
+.input {
+  display: none;
+}
+
+.visyally-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checker {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -30px;
+  background-image: url(./check-off.png);
+}
+
+.input:checked+.checker {
+  background-image: url(./check-on.png);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 503px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.tabs__fast,
+.tabs__cheep {
+  height: 50px;
+  width: 252px;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+.tabs__active {
+  color: #FFFFFF;
+  background-color: #2196F3;
+}
+
+.ticket {
+  padding: 20px 50px 20px 20px;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.ticket__header {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tickets__there {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.tickets__there p {
+  margin: 0;
+}
